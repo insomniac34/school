@@ -1,11 +1,9 @@
 /*
  *@Programmer: Tyler Raborn
- *@email: <tpr11@pitt.edu>
  *@Class: CS-1501 Summer 2013
  *@Assignment: Project 5 - Network Graph Representation
  *@Description: This class implements an undirected weighted graph via an adjacency list, which is implemented as a wrapper class for an array of linked lists.
  *@Development Environment: Eclipse Kepler, Windows 8 Pro 64-bit, JDK7.0_21
- *@Due: 7/29/2013
  */
 
 import java.io.*;
