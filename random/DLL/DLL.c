@@ -43,9 +43,6 @@ void insert_back(DLL* curList, char* newdata)
 
 	if (isFull==0) //if list is empty
 	{
-		//curList = (DLL*)malloc(sizeof(DLL));
-		
-		//initialize(curList);
 		(curList->head) = newNode;
 		(curList->tail) = newNode;
 
