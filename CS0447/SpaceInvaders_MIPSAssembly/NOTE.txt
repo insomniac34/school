@@ -1,0 +1,2 @@
+requires MARS - the MIPS assembler and runtime simulator - and custom 
+modded LEF screen - to run
