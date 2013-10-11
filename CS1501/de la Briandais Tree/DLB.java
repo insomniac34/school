@@ -1,8 +1,7 @@
 /*
  *@Programmer: Tyler Raborn
  *@email: <REDACTED@REDACTED.edu>
- *@Class: CS-1501 Summer 2013
- *@Environment: Eclipse Juno IDE, Windows 8 Pro 64-bit, JDK7.0_21
+ *@Environment: Windows 8 Pro 64-bit, JDK7.0_21
  *@Assignment: Project 1 - Part B - DLB
  *@Due: 6/5/2013
  */
