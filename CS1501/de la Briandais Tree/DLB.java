@@ -1,6 +1,6 @@
 /*
  *@Programmer: Tyler Raborn
- *@email: <tpr11@pitt.edu>
+ *@email: <REDACTED@REDACTED.edu>
  *@Class: CS-1501 Summer 2013
  *@Environment: Eclipse Juno IDE, Windows 8 Pro 64-bit, JDK7.0_21
  *@Assignment: Project 1 - Part B - DLB
