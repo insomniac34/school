@@ -1,6 +1,6 @@
 /*
  *@Programmer: Tyler Raborn
- *@email: <tpr11@pitt.edu>
+ *@email: <REDACTED>
  *@Class: CS-1501 Summer 2013
  *@Assignment: Project 1 - Anagram Finder
  *@Environment: Eclipse Juno IDE, Windows 8 Pro 64-bit, JDK7.0_21
@@ -15,7 +15,6 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 import java.awt.*;
-//import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
