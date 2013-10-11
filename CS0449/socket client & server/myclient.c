@@ -1,4 +1,4 @@
-/* a client in the unix domain */
+/* an localized IM client for unix/linux */
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdlib.h>
