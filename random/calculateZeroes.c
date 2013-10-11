@@ -4,7 +4,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-float* calculateZeroes(float, float, float); gcc=stfu
+float* calculateZeroes(float, float, float); //gcc=stfu
 
 int main(int argc, char** argv)
 {
