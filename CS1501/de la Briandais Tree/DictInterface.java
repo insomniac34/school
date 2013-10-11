@@ -1,6 +1,6 @@
 /*
  *@Name: Tyler Raborn
- *@email: <tpr11@pitt.edu>
+ *@email: <REDACTED@REDACTED.edu>
  *@Class: CS-1501 Summer 2013
  *@Assignment: Project 1 - DLBInterface.java
  *@Due: 6/5/2013
