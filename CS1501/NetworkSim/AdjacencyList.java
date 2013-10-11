@@ -12,13 +12,6 @@ import java.lang.*;
 public class AdjacencyList implements UndirectedGraph 
 {
 
-
-	//-------------------------------------------------------------------------------------------------------------
-	//AdjacencyList fields:
-	//-------------------------------------------------------------------------------------------------------------
-
-
-
 	private int edgeCount;
 	private int vertexCount; //holds initial number of vertices. This determines the size of the wrapped array of linked lists; it never changes.
 	private int curSize; //initially equal to vertexCount; changes to reflect deletions and insertions on the Adjacency List.
