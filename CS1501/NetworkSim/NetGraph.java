@@ -1,7 +1,5 @@
 /*
  *@Programmer: Tyler Raborn
- *@email: <tpr11@pitt.edu>
- *@Class: CS-1501 Summer 2013
  *@Assignment: Project 5 - Network Graph
  *@Description: This class handles the primary user and file I/O for building the network graph.
  *@Development Environment: Eclipse Kepler IDE, Windows 8 Pro 64-bit, JDK7.0_21
