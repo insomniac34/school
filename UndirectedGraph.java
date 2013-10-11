@@ -1,7 +1,5 @@
 /*
  *@Programmer: Tyler Raborn
- *@email: <tpr11@pitt.edu>
- *@Class: CS-1501 Summer 2013
  *@Assignment: Project 5 - Network Graph Representation
  *@Description: Interface for the essential methods of a graph representation.
  *@Development Environment: Eclipse Kepler, Windows 8 Pro 64-bit, JDK7.0_21
