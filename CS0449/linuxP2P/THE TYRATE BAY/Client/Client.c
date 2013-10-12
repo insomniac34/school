@@ -1,6 +1,6 @@
 /* 
  * programmer: Tyler Raborn
- * TESTING ENVIRONMENTS: Linux Mint v14 NADIA 64-bit running in Oracle VirtualBox on Windows 8 Pro 64-bit, THOT@cs.pitt.edu
+ * TESTING ENVIRONMENTS: Linux Mint v14 NADIA 64-bit running in Oracle VirtualBox on Windows 8 Pro 64-bit
  * COMPILATION COMMAND UTILIZED: gcc -Wall -o client client.c
  */ 
 
