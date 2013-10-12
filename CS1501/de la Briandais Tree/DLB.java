@@ -190,19 +190,7 @@ public class DLB implements DictInterface  //external class; provides an externa
 			}
 		}
 	}
-	public void DFS(Node tempNode) //test method; uses a Depth-First-Search-like algorithm to print out all contents of the DLB:
-	{
-		System.out.print(tempNode.data);
-		if ((tempNode.childNode!=null))
-		{
-			DFS(tempNode.childNode);
-		}
-		if (tempNode.siblingNode!=null)
-		{
-			DFS(tempNode.siblingNode);
-		}
 
-	}
 	public int searchPrefix(StringBuilder s)
 	{
 		iteratorList = this.root;
