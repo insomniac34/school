@@ -13,7 +13,7 @@
 #include <cstdio>
 #include <cmath>
 #include <vector>
-#include "Camera.h" 
+#include "Camera.h"
 #include "Shape.h"
 #define DEG 180.0/M_PI
 #define RADS M_PI/180.0
