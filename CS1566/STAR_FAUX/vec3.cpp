@@ -1,3 +1,5 @@
+//written by Tyler Raborn
+
 #include "vec3.h"
 
 vec3::vec3()
