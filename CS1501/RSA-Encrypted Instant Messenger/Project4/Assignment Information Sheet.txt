@@ -1,0 +1,27 @@
+Tyler Raborn
+CS1501 Summer 2013
+Assignment Information Sheet for Project 4 - RSA Encryption
+Due Date: 7/16/2013
+
+Development Environment: JDK 7/Eclipse Kepler/Windows 8 Pro 64-bit
+
+Java Source Files:
+Add128.java
+Substitute.java
+SecureChatClient.java
+SecureChatServer.java
+SymCipher.java
+
+Additional Files:
+Keys.txt
+Assignment Information Sheet.txt
+
+The source files all compile & run without error. 
+
+Particular difficulty was experienced when outputting the byte[] arrays as String objects for viewing as per the spec sheet. Turns out I just needed to use Arrays.toString(byte[]) to display them properly.
+Another bug that cost me several hours of hunting and searching through code was a single line in SecureChatClient.java where I accidentally used ObjectOutputStream.write() to transmit an encrypted message 
+instead of ObjectOutputStream.writeObject().
+
+
+
+
