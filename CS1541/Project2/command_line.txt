@@ -1,0 +1,520 @@
+Using cygwin, to compile:
+g++ -o test0 main.cpp Pipeline.cpp Cache.cpp
+
+
+To run:
+$ ./test0 <trace_file> <trace_view_on> <prediction_method> <map_size> <cache_size> <block_size> <assoc> <penalty>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Experiment 1:
+$ ./test0 sample_large1.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 440751749 .........................
+
+cache accesses: 28682155
+cache hits: 23292746
+cache misses: 5389409
+write backs: 787446
+
+
+$ ./test0 sample_large1.tr 0 0 64 16 4 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 383030849 .........................
+
+cache accesses: 28682155
+cache hits: 24254761
+cache misses: 4427394
+write backs: 715368
+
+
+$ ./test0 sample_large1.tr 0 0 64 64 4 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 314497529 .........................
+
+cache accesses: 28682155
+cache hits: 25396983
+cache misses: 3285172
+write backs: 628292
+
+
+$ ./test0 sample_large1.tr 0 0 64 256 4 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 222646349 .........................
+
+cache accesses: 28682155
+cache hits: 26927836
+cache misses: 1754319
+write backs: 372903
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large2.tr
+....................SIMULATION TERMINATED at cycle 418074488 .........................
+
+cache accesses: 34045463
+cache hits: 29002044
+cache misses: 5043419
+write backs: 789214
+
+
+$ ./test0 sample_large2.tr 0 0 64 16 4 4 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 287453108 .........................
+
+cache accesses: 34045463
+cache hits: 31179067
+cache misses: 2866396
+write backs: 391495
+
+
+$ ./test0 sample_large2.tr 0 0 64 64 4 4 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 209804588 .........................
+
+cache accesses: 34045463
+cache hits: 32473209
+cache misses: 1572254
+write backs: 227853
+
+
+$ ./test0 sample_large2.tr 0 0 64 256 4 4 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 167759588 .........................
+
+cache accesses: 34045463
+cache hits: 33173959
+cache misses: 871504
+write backs: 148373
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1312034980 .........................
+
+cache accesses: 33066695
+cache hits: 13251584
+cache misses: 19815111
+write backs: 411281
+
+
+$ ./test0 sample_large3.tr 0 0 64 16 4 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1279494280 .........................
+
+cache accesses: 33066695
+cache hits: 13793929
+cache misses: 19272766
+write backs: 368878
+
+
+$ ./test0 sample_large3.tr 0 0 64 64 4 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1182956560 .........................
+
+cache accesses: 33066695
+cache hits: 15402891
+cache misses: 17663804
+write backs: 100674
+
+
+$ ./test0 sample_large3.tr 0 0 64 256 4 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1124551900 .........................
+
+cache accesses: 33066695
+cache hits: 16376302
+cache misses: 16690393
+write backs: 31603
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Experiment 2:
+
+$ ./test0 sample_large1.tr 0 0 64 4 4 1 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 619661849 .........................
+
+cache accesses: 28682155
+cache hits: 20310911
+cache misses: 8371244
+write backs: 1277773
+
+
+$ ./test0 sample_large1.tr 0 0 64 4 4 2 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 600504269 .........................
+
+cache accesses: 28682155
+cache hits: 20630204
+cache misses: 8051951
+write backs: 1281309
+
+
+$ ./test0 sample_large1.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 486468149 .........................
+
+cache accesses: 28682155
+cache hits: 22530806
+cache misses: 6151349
+write backs: 788101
+
+
+$ ./test0 sample_large1.tr 0 0 64 4 4 8 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 436155869 .........................
+
+cache accesses: 28682155
+cache hits: 23369344
+cache misses: 5312811
+write backs: 779954
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 1 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 537195368 .........................
+
+cache accesses: 34045463
+cache hits: 27016696
+cache misses: 7028767
+write backs: 1139402
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 2 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 561540128 .........................
+
+cache accesses: 34045463
+cache hits: 26610950
+cache misses: 7434513
+write backs: 1313446
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 511654988 .........................
+
+cache accesses: 34045463
+cache hits: 27442369
+cache misses: 6603094
+write backs: 1162871
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 8 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 400471088 .........................
+
+cache accesses: 34045463
+cache hits: 29295434
+cache misses: 4750029
+write backs: 728603
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 1 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1331562460 .........................
+
+cache accesses: 33066695
+cache hits: 12926126
+cache misses: 20140569
+write backs: 442800
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 2 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1340099680 .........................
+
+cache accesses: 33066695
+cache hits: 12783839
+cache misses: 20282856
+write backs: 447161
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1336158520 .........................
+
+cache accesses: 33066695
+cache hits: 12849525
+cache misses: 20217170
+write backs: 439810
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 8 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1311703360 .........................
+
+cache accesses: 33066695
+cache hits: 13257111
+cache misses: 19809584
+write backs: 410101
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Experiment 3:
+$ ./test0 sample_large1.tr 0 0 64 4 2 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 489008309 .........................
+
+cache accesses: 28682155
+cache hits: 22488470
+cache misses: 6193685
+write backs: 1070212
+
+
+$ ./test0 sample_large1.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 440751749 .........................
+
+cache accesses: 28682155
+cache hits: 23292746
+cache misses: 5389409
+write backs: 787446
+
+
+$ ./test0 sample_large1.tr 0 0 64 4 8 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 422959109 .........................
+
+cache accesses: 28682155
+cache hits: 23589290
+cache misses: 5092865
+write backs: 660162
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 2 4 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 425735888 .........................
+
+cache accesses: 34045463
+cache hits: 28874354
+cache misses: 5171109
+write backs: 991901
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 418074488 .........................
+
+cache accesses: 34045463
+cache hits: 29002044
+cache misses: 5043419
+write backs: 789214
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 8 4 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 416654528 .........................
+
+cache accesses: 34045463
+cache hits: 29025710
+cache misses: 5019753
+write backs: 689613
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 2 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1333462840 .........................
+
+cache accesses: 33066695
+cache hits: 12894453
+cache misses: 20172242
+write backs: 520529
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1312034980 .........................
+
+cache accesses: 33066695
+cache hits: 13251584
+cache misses: 19815111
+write backs: 411281
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 8 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1241549800 .........................
+
+cache accesses: 33066695
+cache hits: 14426337
+cache misses: 18640358
+write backs: 388862
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Experiment 4:
+$ ./test0 sample_large1.tr 0 0 64 4 4 4 20
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 225175389 .........................
+
+cache accesses: 28682155
+cache hits: 23292746
+cache misses: 5389409
+write backs: 787446
+
+
+$ ./test0 sample_large1.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 440751749 .........................
+
+cache accesses: 28682155
+cache hits: 23292746
+cache misses: 5389409
+write backs: 787446
+
+
+$ ./test0 sample_large1.tr 0 0 64 4 4 4 100
+
+ ** opening file sample_large1.tr
+
+....................SIMULATION TERMINATED at cycle 656328109 .........................
+
+cache accesses: 28682155
+cache hits: 23292746
+cache misses: 5389409
+write backs: 787446
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 4 20
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 216337728 .........................
+
+cache accesses: 34045463
+cache hits: 29002044
+cache misses: 5043419
+write backs: 789214
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 418074488 .........................
+
+cache accesses: 34045463
+cache hits: 29002044
+cache misses: 5043419
+write backs: 789214
+
+
+$ ./test0 sample_large2.tr 0 0 64 4 4 4 100
+
+ ** opening file sample_large2.tr
+
+....................SIMULATION TERMINATED at cycle 619811248 .........................
+
+cache accesses: 34045463
+cache hits: 29002044
+cache misses: 5043419
+write backs: 789214
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 4 20
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 519430540 .........................
+
+cache accesses: 33066695
+cache hits: 13251584
+cache misses: 19815111
+write backs: 411281
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 4 60
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 1312034980 .........................
+
+cache accesses: 33066695
+cache hits: 13251584
+cache misses: 19815111
+write backs: 411281
+
+
+$ ./test0 sample_large3.tr 0 0 64 4 4 4 100
+
+ ** opening file sample_large3.tr
+
+....................SIMULATION TERMINATED at cycle 2104639420 .........................
+
+cache accesses: 33066695
+cache hits: 13251584
+cache misses: 19815111
+write backs: 411281
