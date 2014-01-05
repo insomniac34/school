@@ -1,5 +1,7 @@
 /*
  *@Programmer: Tyler Raborn
+ *@email: <tpr11@pitt.edu>
+ *@Class: CS-1501 Summer 2013
  *@Assignment: Project 5 - Network Graph Representation
  *@Description: This class implements an undirected weighted graph via an adjacency list, which is implemented as a wrapper class for an array of linked lists.
  *@Development Environment: Eclipse Kepler, Windows 8 Pro 64-bit, JDK7.0_21
@@ -12,7 +14,6 @@ import java.lang.*;
 
 public class AdjacencyList implements UndirectedGraph 
 {
-
 	private int edgeCount;
 	private int vertexCount; //holds initial number of vertices. This determines the size of the wrapped array of linked lists; it never changes.
 	private int curSize; //initially equal to vertexCount; changes to reflect deletions and insertions on the Adjacency List.
@@ -23,7 +24,6 @@ public class AdjacencyList implements UndirectedGraph
 	private ArrayList<String> pathList; //global arraylist for holding calculated paths
 	private int[] marked; //used for determining connectivity of the network.
 
-
 	//error messages
 	private final String errIO = "I/O Exception! System Exiting...";
 	private final String errListOutOfBounds = "\nAttempted to insert vertex into an insufficiently sized Adjacency List!\n";
@@ -33,13 +33,6 @@ public class AdjacencyList implements UndirectedGraph
 	private final String errNodeDeleted = "\nERROR: Unable to calculate network path; a network node may be temporarily down, or the path may not exist.\n";
 	private final String errNodeDown = "\nERROR: Unable to contact node; the network node may be temporarily down, or the path may not exist.\n";
 	private final String errNodeUp = "\nERROR: Unable to initiate automatic repair procedures while network node reporting healthy status!\n";
-
-
-	
-    //-------------------------------------------------------------------------------------------------------------	
-	//AdjacencyList Constructors:
-    //-------------------------------------------------------------------------------------------------------------
-
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~AdjacencyList(int v)~~
@@ -59,7 +52,6 @@ public class AdjacencyList implements UndirectedGraph
 			this.list[i] = new LinkedList();
 		}
 	}
-
 
     //-------------------------------------------------------------------------------------------------------------
     //  ~~AdjacencyList(BufferedReader r)~~
@@ -98,14 +90,6 @@ public class AdjacencyList implements UndirectedGraph
 		}
 		status="Connected";
 	}
-	
-
-
-    //-------------------------------------------------------------------------------------------------------------
-	//AdjacencyList methods:
-	//-------------------------------------------------------------------------------------------------------------
-
-
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~contains(int vertex)~~
@@ -129,8 +113,6 @@ public class AdjacencyList implements UndirectedGraph
 		return false;
 	}
 
-
-
     //-------------------------------------------------------------------------------------------------------------
     // ~~contains(edge e)~~
     //	-this method returns true if the edge is contained in the adjacency list, and
@@ -145,8 +127,6 @@ public class AdjacencyList implements UndirectedGraph
 		}
 		return false;
 	}
-
-
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~insert()~~
@@ -177,8 +157,6 @@ public class AdjacencyList implements UndirectedGraph
 		} 
 	}
 
-
-
     //-------------------------------------------------------------------------------------------------------------
     // ~~report()~~
     //	-this method displays information about each individual node currently active in the network.
@@ -198,8 +176,6 @@ public class AdjacencyList implements UndirectedGraph
 
 		this.view();
 	}
-
-
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~isConnected()~~
@@ -242,8 +218,6 @@ public class AdjacencyList implements UndirectedGraph
 
 	}
 
-
-
     //-------------------------------------------------------------------------------------------------------------
     // ~~DFS()~~
     //	-this method uses Depth-First-Search to recursively search the graph.
@@ -263,8 +237,6 @@ public class AdjacencyList implements UndirectedGraph
 		}
 		//System.out.println("Falling out of void...");
 	}
-
-
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~prims()~~
@@ -322,8 +294,6 @@ public class AdjacencyList implements UndirectedGraph
 		MST.view();
 	}
 
-
-
     //-------------------------------------------------------------------------------------------------------------
     // ~~findMinimumEdge()~~
     //	-this method finds the lowest-weighted edge connecting a vertex in the tree with a vertex NOT in the tree.
@@ -361,8 +331,6 @@ public class AdjacencyList implements UndirectedGraph
 		}
 		return cheapestEdge;
 	}
-
-
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~djikstras()~~
@@ -422,8 +390,6 @@ public class AdjacencyList implements UndirectedGraph
 		}
 	}
 
-
-
     //-------------------------------------------------------------------------------------------------------------
     // ~~disableNode()~~
    	//  -removes an edge from the graph.
@@ -444,8 +410,6 @@ public class AdjacencyList implements UndirectedGraph
 		}
 
 	}
-
-
 
 	//-------------------------------------------------------------------------------------------------------------
     // ~~distinctPaths()~~
@@ -490,11 +454,7 @@ public class AdjacencyList implements UndirectedGraph
 		{
 			System.err.println(errNodeDeleted);
 		}
-
-
 	}
-
-   
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~searchPaths()~~
@@ -530,8 +490,6 @@ public class AdjacencyList implements UndirectedGraph
 			return;
 	}
 
-
-
 	//-------------------------------------------------------------------------------------------------------------
     // ~~disableNode()~~
     //	-This function takes in a single int param that represents the vertex to be brought down. 
@@ -559,8 +517,6 @@ public class AdjacencyList implements UndirectedGraph
 			System.err.println(errNodeDown);
 		}	
 	}
-
-
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~restoreNode()~~
@@ -599,8 +555,6 @@ public class AdjacencyList implements UndirectedGraph
 		}
 
 	}
-
-
 
     //-------------------------------------------------------------------------------------------------------------
     // ~~modifyWeight()~~
@@ -657,8 +611,6 @@ public class AdjacencyList implements UndirectedGraph
 		else System.err.println(errDeletedNode);
 	}
 
-
-
     //-------------------------------------------------------------------------------------------------------------
     // ~~view()~~
     //	-this void function is used to display the current state of a graph. It displays the information on a per-vertex basis; that is, it displays the vertex and each edge
@@ -683,8 +635,6 @@ public class AdjacencyList implements UndirectedGraph
 		System.out.println();
 	}
 
-
-
     //-------------------------------------------------------------------------------------------------------------
     // ~~perror()~~
     //	-This function handles the display of error messages via standard error and exits the program
@@ -695,8 +645,6 @@ public class AdjacencyList implements UndirectedGraph
 		System.err.println(msg);
 		System.exit(-1);
 	}
-
-
 
 	//-------------------------------------------------------------------------------------------------------------
     // ~~getInts()~~
@@ -716,14 +664,6 @@ public class AdjacencyList implements UndirectedGraph
 		return intArray;
 	}
 
-
-
-	//-------------------------------------------------------------------------------------------------------------
-	//AdjacencyList Internal Classes:
-	//-------------------------------------------------------------------------------------------------------------
-
-
-
 	//-------------------------------------------------------------------------------------------------------------
 	// private class LinkedList
 	// implements a Singly Linked List data structure such that each index in AdjacencyList field 'list' contains such a construct 
@@ -736,21 +676,11 @@ public class AdjacencyList implements UndirectedGraph
 		private int size = 0;
 		private boolean status;
 		private ArrayList<Edge> edgeGraveYard; //this data structure maintains a list of edges that are temporarily brought down. For the purposes of this network simulation, deleted edges are
-											   //not actually deleted, but simply removed from the link list and subsequently stored in this ArrayList so that they can be retrieved.
-
-
-		//-------------------------------------------------------------------------------------------------------------
-		//LinkedList constructors:
-		//-------------------------------------------------------------------------------------------------------------
-
-
 
 		public LinkedList()
 		{
 			edgeGraveYard = new ArrayList<Edge>();
 		}
-
-
 
 		//-------------------------------------------------------------------------------------------------------------
 		//	this constructor takes in an integer, representing a vertex, and an ArrayList containing data about the graph. 
@@ -810,14 +740,6 @@ public class AdjacencyList implements UndirectedGraph
 				}
 			} //NOW, the list array contains a linked list that contains each connecting edge to vertex n
 		}
-		
-
-
-		//-------------------------------------------------------------------------------------------------------------
-		//LinkedList methods:
-		//-------------------------------------------------------------------------------------------------------------
-
-
 
 		//-------------------------------------------------------------------------------------------------------------
 		//	void deleteNode()
@@ -854,8 +776,6 @@ public class AdjacencyList implements UndirectedGraph
 			}
 		}
 
-
-
 		//-------------------------------------------------------------------------------------------------------------
 		// getCheapestEdge()
 		// returns the cheapest edge in this linked list.
@@ -888,8 +808,6 @@ public class AdjacencyList implements UndirectedGraph
 			}
 			return new Edge(iterator.getData());
 		}
-
-
 
 		//-------------------------------------------------------------------------------------------------------------
 		// getCheapestEdge(int[])
@@ -926,8 +844,6 @@ public class AdjacencyList implements UndirectedGraph
 			return new Edge(iterator.getData());
 		}
 
-
-
 		//-------------------------------------------------------------------------------------------------------------
 		// getEdge(int)
 		// returns the edge in this linked list whose second vertex is the passed-in int parameter.
@@ -953,21 +869,15 @@ public class AdjacencyList implements UndirectedGraph
 			//throw new NullPointerException("Vertex not contained within list!");
 		}
 
-
-
 		public boolean getStatus()
 		{
 			return this.status;
 		}
 
-
-
 		public void setStatus(boolean b)
 		{
 			this.status=b;
 		}
-
-
 
 		//-------------------------------------------------------------------------------------------------------------
 		// void display()
@@ -983,8 +893,6 @@ public class AdjacencyList implements UndirectedGraph
 				temp = temp.nextNode;
 			}
 		}
-
-
 
 		//-------------------------------------------------------------------------------------------------------------
 		// int[] disable()
@@ -1009,8 +917,6 @@ public class AdjacencyList implements UndirectedGraph
 			return vertexArray; //returns the list of adjacent nodes to the calling Adjacency List method to ensure deletion of reverse edge representations.
 		}
 
-
-
 		//-------------------------------------------------------------------------------------------------------------
 		// void insert(edge e)
 		// this method inserts the edge into a node at the head of list.
@@ -1034,8 +940,6 @@ public class AdjacencyList implements UndirectedGraph
 			}
 		}
 
-
-
 		//-------------------------------------------------------------------------------------------------------------
 		// void find(edge e)
 		// returns true if edge is located in a node in the linked list
@@ -1052,8 +956,6 @@ public class AdjacencyList implements UndirectedGraph
 			return false;
 		}
 	}// end linkedlist class
-
-
 
 	//-------------------------------------------------------------------------------------------------------------
 	// private class Node
@@ -1083,8 +985,6 @@ public class AdjacencyList implements UndirectedGraph
 			return this.data;
 		}
 	} //end node class
-
-
 
 	//-------------------------------------------------------------------------------------------------------------
 	// private class Edge
